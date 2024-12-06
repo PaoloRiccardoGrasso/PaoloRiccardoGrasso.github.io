@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="language" content="it" />
+    <meta name="Author" content="Paolo Riccardo Grasso">
+    <meta name="Description" content="Gli obiettivi dell'EU:- Energia Sostenibile - Blue Deal - Green Deal">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <title>Home - Obiettivi dell'EU</title>
+</head>
+
+<body bgcolor="38618c">
+    <div class="Titolo">
+        <!-- Box per il logo -->
+        <div class="BoxLogo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Flag_of_Europe.svg/2560px-Flag_of_Europe.svg.png" alt="Logo" class="Logo"> <!-- Sostituisci "logo.png" con il percorso effettivo del tuo logo -->
+        </div>
+
+        <!-- Titolo e sottotitolo -->
+        <div class="TitoloText">
+            <h1>Gli obiettivi dell'EU</h1>
+            <div class="Sottotitolo">
+                <h5>Energie rinnovabili, Blue Deal, Green Deal.</h5>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sezioni con 4 bottoni -->
+    <div class="Sezioni">
+        <a href="" class="link-sezione">
+            <div class="Sezione">
+                <img src="https://cdn.studenti.stbm.it/images/2018/12/13/energie-rinnovabili-orig.jpeg" alt="Sezione 1" class="ImmagineSezione">
+                <h3>Energie Rinnovabili</h3>
+                <p>L'UE promuove le energie rinnovabili per ridurre le emissioni, garantire sicurezza energetica e raggiungere la neutralità climatica entro il 2050, con obiettivi ambiziosi e finanziamenti dedicati.</p>
+            </div>
+        </a>
+        
+        <a href="" class="link-sezione">
+            <div class="Sezione">
+                <img src="https://wodnesprawy.pl/wp-content/uploads/2023/11/Wodne-Sprawy-24_2023-9.jpg" alt="Sezione 2" class="ImmagineSezione">
+                <h3>Blue Deal</h3>
+                <p>Il Blue Deal promuove l'uso sostenibile dell'energia marina e delle risorse idriche per supportare la transizione verde, proteggendo ecosistemi e comunità costiere.</p>
+            </div>
+        </a>
+    
+        <a href="" class="link-sezione">
+            <div class="Sezione">
+                <img src="https://media.e-medine.org/e-medine.org/wp-content/uploads/2022/09/1-sito.jpg" alt="Sezione 3" class="ImmagineSezione">
+                <h3>Green Deal</h3>
+                <p>Il Green Deal europeo è il piano dell'UE per raggiungere la neutralità climatica entro il 2050, promuovendo sostenibilità, economia circolare e riduzione delle emissioni.</p>
+            </div>
+        </a>
+    
+        <a href="" class="link-sezione">
+            <div class="Sezione">
+                <img src="https://www.wasteam.net/wasteam2021/wp-content/uploads/2022/04/Economia-circolare.png" alt="Sezione 4" class="ImmagineSezione">
+                <h3>Economia Circolare</h3>
+                <p>L'economia circolare punta a ridurre gli sprechi, favorire il riuso e il riciclo, promuovendo un modello sostenibile che preserva le risorse naturali.</p>
+            </div>
+        </a>
+    </div>
+    
+
+    <script>
+        window.addEventListener('scroll', function() {
+            const titolo = document.querySelector('.Titolo');
+            const logo = document.querySelector('.Logo');
+            const sottotitolo = document.querySelector('.Sottotitolo');
+            if (window.scrollY > 50) { // Se l'utente scorre più di 50px
+                titolo.classList.add('ridotta');
+                logo.classList.add('ridotta');
+            } else {
+                titolo.classList.remove('ridotta');
+                logo.classList.remove('ridotta');
+            }
+        });
+    </script>
+    
+</body>
+
+</html>
