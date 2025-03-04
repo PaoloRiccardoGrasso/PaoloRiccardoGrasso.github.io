@@ -18,10 +18,16 @@
 </head>
 
 <body>
+
+   <div class="cursor outer"></div>
+   <div class="cursor inner"></div>
+
    <!--==================== HEADER ====================-->
    <header class="header" id="header">
+
+
       <nav class="nav container">
-         <a href="#" class="nav__logo">
+         <a href="#" class="nav__logo link">
             <span class="nav__logo-circle">P</span>
             <span class="nav__logo-name">Paolo Riccardo Grasso</span>
          </a>
@@ -32,16 +38,16 @@
 
             <ul class="nav__list">
                <li class="nav__item">
-                  <a href="#home" class="nav__link active-link">Home</a>
+                  <a href="#home" class="nav__link active-link link">Home</a>
                </li>
                <li class="nav__item">
-                  <a href="#about" class="nav__link">About me</a>
+                  <a href="#about" class="nav__link link">About me</a>
                </li>
                <li class="nav__item">
-                  <a href="#progetti" class="nav__link">Progetti</a>
+                  <a href="#progetti" class="nav__link link">Progetti</a>
                </li>
                <li class="nav__item">
-                  <a href="#contattami" class="nav__link nav__link-button">Contattami</a>
+                  <a href="#contattami" class="nav__link nav__link-button link">Contattami</a>
                </li>
             </ul>
 
@@ -85,13 +91,14 @@
 
 
                <div class="home__social">
-                  <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                  <a href="https://www.instagram.com/paologr1280/" target="_blank" class="home__social-link link">
                      <i class="ri-instagram-line"></i>
                   </a>
-                  <a href="https://www.linkedin.com/" target="_blank" class="home__social-link">
+                  <a href="https://www.linkedin.com/in/paoloriccardograsso/" target="_blank"
+                     class="home__social-link link">
                      <i class="ri-linkedin-box-line"></i>
                   </a>
-                  <a href="https://github.com/" target="_blank" class="home__social-link">
+                  <a href="https://github.com/PaoloRiccardoGrasso/" target="_blank" class="home__social-link link">
                      <i class="ri-github-line"></i>
                   </a>
                </div>
@@ -99,12 +106,50 @@
 
             <div class="home__info">
                <p class="home__description">
-                  <b>Frontend Developer</b>, with knowledge in web
-                  development and design, I offer the best
-                  projects resulting in quality work.
+                  <b id="animated-text">Frontend Developer</b>, Con competenza nello sviluppo di applicazioni,
+                  realizzo progetti garantendo qualità e affidabilità.
                </p>
 
-               <a href="#about" class="home__scroll">
+               <script>
+                  const texts = [
+                     "C & C++ Developer",
+                     "Java Developer",
+                     "HTML, CSS & JavaScript Developer",
+                     "Figma UI/UX Designer",
+                     "Photoshop UI/UX Designer",
+                     "App & Software Development",
+                     "Responsive Web Design",
+                     "Graphic Design",
+                     "Database Management",
+                     "Git & GitHub"
+                  ];
+
+                  function shuffleArray(array) {
+                     return array.sort(() => Math.random() - 0.5);
+                  }
+
+                  let shuffledTexts = shuffleArray([...texts]);
+                  let index = 0;
+                  const animatedText = document.getElementById("animated-text");
+
+                  function changeText() {
+                     animatedText.style.animation = "none";
+                     void animatedText.offsetWidth; // Reset animation
+                     animatedText.style.animation = "fadeUp 8s infinite";
+                     animatedText.textContent = shuffledTexts[index];
+
+                     index++;
+                     if (index >= shuffledTexts.length) {
+                        shuffledTexts = shuffleArray([...texts]); // Reshuffle the array
+                        index = 0;
+                     }
+                  }
+
+                  setInterval(changeText, 2000);
+               </script>
+
+
+               <a href="#about" class="home__scroll link">
                   <div class="home__scroll-box">
                      <i class="ri-arrow-down-s-line"></i>
                   </div>
@@ -140,25 +185,64 @@
 
             <div class="about__info">
                <p class="about__description">
-                  Passionate about creating <b>Web Pages</b> with
-                  <b>UI/UX User Interface</b>, I have years of
-                  experience and many clients are happy with
-                  the projects carried out.
+                  Come studente appassionato di <b id="testo_animato">sviluppo web e app</b>, espando costantemente le
+                  mie
+                  competenze e realizzando progetti di alta qualità.
+                  Ho acquisito una preziosa esperienza attraverso progetti personali.
                </p>
+
+               <script>
+                  const testo = [
+                     "C & C++",
+                     "Java",
+                     "HTML & CSS",
+                     "JavaScript",
+                     "Figma",
+                     "Photoshop",
+                     "App & Software",
+                     "Responsive Web",
+                     "Graphic Design",
+                     "Database Management",
+                     "Git & GitHub"
+                  ];
+
+                  function shuffleArray(array) {
+                     return array.sort(() => Math.random() - 0.5);
+                  }
+
+                  let testoMischiato = shuffleArray([...testo]);
+                  let indice = 0;
+                  const testoAnimato = document.getElementById("testo_animato");
+
+                  function changeText() {
+                     testoAnimato.style.animation = "none";
+                     void testoAnimato.offsetWidth; // Reset animation
+                     testoAnimato.style.animation = "fadeUp 8s infinite";
+                     testoAnimato.textContent = testoMischiato[indice];
+
+                     indice++;
+                     if (indice >= testoMischiato.length) {
+                        testoMischiato = shuffleArray([...testo]); // Rimescola l'array
+                        indice = 0;
+                     }
+                  }
+
+                  setInterval(changeText, 2000);
+               </script>
 
                <ul class="about__list">
                   <li class="about__item">
-                     <b>My Skills Are:</b> HTML, CSS, JavaScript,
-                     React, Git & GitHub, Bootstrap, Flutter & Figma.
+                     <b>Le mie skills sono:</b> HTML, CSS, JavaScript,
+                     Java, Git & GitHub, & Figma.
                   </li>
                </ul>
 
                <div class="about__buttons">
-                  <a href="#contattami" class="button">
+                  <a href="#contattami" class="button link">
                      <i class="ri-send-plane-line"></i> Contattami
                   </a>
 
-                  <a href="https://www.linkedin.com/" target="_blank" class="button__ghost">
+                  <a href="https://www.linkedin.com/" target="_blank" class="button__ghost link">
                      <i class="ri-linkedin-box-line"></i>
                   </a>
                </div>
@@ -168,75 +252,67 @@
 
 
       <!--==================== SERVICES ====================-->
-      <section class="services section" id="servizi">
+      <section class="services section" id="competenze">
          <h2 class="section__title-2">
-            <span>Servizi</span>
+            <span>Le mie competenze</span>
          </h2>
+
+
 
          <div class="services__container container grid">
             <article class="services__card">
                <div class="services__border"></div>
-
                <div class="services__content">
                   <div class="services__icon">
                      <div class="services__box"></div>
-                     <i class="ri-layout-4-line"></i>
-
-
+                     <i class="ri-window-line"></i>
                   </div>
-
                   <h2 class="services__title">Web Design</h2>
-
                   <p class="services__description">
-                     Beautiful and elegant designs with
-                     interfaces that are intuitive, efficient
-                     and pleasant to use for the user.
+                     Sviluppo applicazioni web in HTML, CSS e JavaScript. Ho esperienza nella realizzazione di
+                     interfacce utente dinamiche e performanti, creando soluzioni responsive e moderne grazie
+                     all’adozione delle migliori tecnologie web.
                   </p>
                </div>
             </article>
 
             <article class="services__card">
                <div class="services__border"></div>
-
                <div class="services__content">
                   <div class="services__icon">
                      <div class="services__box"></div>
                      <i class="ri-code-box-line"></i>
-
                   </div>
-
-                  <h2 class="services__title">Development</h2>
-
+                  <h2 class="services__title">Sviluppo App</h2>
                   <p class="services__description">
-                     Custom web development tailored to your
-                     specifications, designed to provide a
-                     flawless user experience.
+                     Sviluppo applicazioni in C, C++, e Java. Ho esperienza nello sviluppo di software complessi e
+                     performanti utilizzando
+                     questi linguaggi di programmazione.
                   </p>
                </div>
             </article>
 
             <article class="services__card">
                <div class="services__border"></div>
-
                <div class="services__content">
                   <div class="services__icon">
                      <div class="services__box"></div>
-                     <i class="ri-smartphone-line"></i>
-
+                     <i class="ri-base-station-line"></i>
                   </div>
-
-                  <h2 class="services__title">Mobile App</h2>
-
+                  <h2 class="services__title">Sviluppo Reti</h2>
                   <p class="services__description">
-                     Design and transform website projects
-                     into mobile apps to provide a seamless
-                     user experience.
+                     Progetto, configuro e gestisco reti utilizzando router Cisco, switch e firewall, ottimizzando la
+                     sicurezza, le performance e la scalabilità per ambienti complessi e in continua evoluzione.
                   </p>
                </div>
             </article>
          </div>
 
       </section>
+
+
+
+
 
       <!--==================== PROJECTS ====================-->
       <section class="projects section" id="progetti">
@@ -250,7 +326,7 @@
                <div class="projects__image">
                   <img src="assets/img/project-1.jpg" alt="image" class="projects__img">
 
-                  <a href="#" class="projects__button button">
+                  <a href="#" class="projects__button button link">
                      <i class="ri-arrow-right-up-line"></i>
                   </a>
                </div>
@@ -266,11 +342,11 @@
                </div>
 
                <div class="projects__buttons">
-                  <a href="https://github.com/" target="_blank" class="projects__link">
+                  <a href="https://github.com/" target="_blank" class="projects__link link">
                      <i class="ri-github-line"></i> View
                   </a>
 
-                  <a href="https://dribbble.com/" target="_blank" class="projects__link">
+                  <a href="https://dribbble.com/" target="_blank" class="projects__link link">
                      <i class="ri-dribbble-line"></i> View
                   </a>
                </div>
@@ -282,7 +358,7 @@
                <div class="projects__image">
                   <img src="assets/img/project-2.jpg" alt="image" class="projects__img">
 
-                  <a href="#" class="projects__button button">
+                  <a href="#" class="projects__button button link">
                      <i class="ri-arrow-right-up-line"></i>
                   </a>
                </div>
@@ -298,11 +374,11 @@
                </div>
 
                <div class="projects__buttons">
-                  <a href="https://github.com/" target="_blank" class="projects__link">
+                  <a href="https://github.com/" target="_blank" class="projects__link link">
                      <i class="ri-github-line"></i> View
                   </a>
 
-                  <a href="https://dribbble.com/" target="_blank" class="projects__link">
+                  <a href="https://dribbble.com/" target="_blank" class="projects__link link">
                      <i class="ri-dribbble-line"></i> View
                   </a>
                </div>
@@ -314,7 +390,7 @@
                <div class="projects__image">
                   <img src="assets/img/project-3.jpg" alt="image" class="projects__img">
 
-                  <a href="#" class="projects__button button">
+                  <a href="#" class="projects__button button link">
                      <i class="ri-arrow-right-up-line"></i>
                   </a>
                </div>
@@ -330,11 +406,11 @@
                </div>
 
                <div class="projects__buttons">
-                  <a href="https://github.com/" target="_blank" class="projects__link">
+                  <a href="https://github.com/" target="_blank" class="projects__link link">
                      <i class="ri-github-line"></i> View
                   </a>
 
-                  <a href="https://dribbble.com/" target="_blank" class="projects__link">
+                  <a href="https://dribbble.com/" target="_blank" class="projects__link link">
                      <i class="ri-dribbble-line"></i> View
                   </a>
                </div>
@@ -346,7 +422,7 @@
                <div class="projects__image">
                   <img src="assets/img/project-1.jpg" alt="image" class="projects__img">
 
-                  <a href="#" class="projects__button button">
+                  <a href="#" class="projects__button button link">
                      <i class="ri-arrow-right-up-line"></i>
                   </a>
                </div>
@@ -362,11 +438,11 @@
                </div>
 
                <div class="projects__buttons">
-                  <a href="https://github.com/" target="_blank" class="projects__link">
+                  <a href="https://github.com/" target="_blank" class="projects__link link">
                      <i class="ri-github-line"></i> View
                   </a>
 
-                  <a href="https://dribbble.com/" target="_blank" class="projects__link">
+                  <a href="https://dribbble.com/" target="_blank" class="projects__link link">
                      <i class="ri-dribbble-line"></i> View
                   </a>
                </div>
@@ -377,7 +453,7 @@
                <div class="projects__image">
                   <img src="assets/img/project-1.jpg" alt="image" class="projects__img">
 
-                  <a href="#" class="projects__button button">
+                  <a href="#" class="projects__button button link">
                      <i class="ri-arrow-right-up-line"></i>
                   </a>
                </div>
@@ -393,11 +469,11 @@
                </div>
 
                <div class="projects__buttons">
-                  <a href="https://github.com/" target="_blank" class="projects__link">
+                  <a href="https://github.com/" target="_blank" class="projects__link link">
                      <i class="ri-github-line"></i> View
                   </a>
 
-                  <a href="https://dribbble.com/" target="_blank" class="projects__link">
+                  <a href="https://dribbble.com/" target="_blank" class="projects__link link">
                      <i class="ri-dribbble-line"></i> View
                   </a>
                </div>
@@ -437,37 +513,37 @@
                <form action="" class="contact__form" id="contact-form">
                   <div class="contact__group">
                      <div class="contact__box">
-                        <input type="text" name="user_name" class="contact__input" id="name" required
+                        <input type="text" name="user_name" class="contact__input link" id="name" required
                            placeholder="Nome">
                         <label for="name" class="contact__label">Nome</label>
                      </div>
 
                      <div class="contact__box">
-                        <input type="email" name="user_email" class="contact__input" id="email" required
+                        <input type="email" name="user_email" class="contact__input link" id="email" required
                            placeholder="Indirizzo Email">
                         <label for="email" class="contact__label">Indirizzo Email</label>
                      </div>
                   </div>
 
-                     <div class="contact__box">
-                        <input type="text" name="user_oggetto" class="contact__input" id="oggetto" required
-                           placeholder="Oggetto">
-                        <label for="oggetto" class="contact__label">Oggetto</label>
-                     </div>
+                  <div class="contact__box">
+                     <input type="text" name="user_oggetto" class="contact__input link" id="oggetto" required
+                        placeholder="Oggetto">
+                     <label for="oggetto" class="contact__label">Oggetto</label>
+                  </div>
 
 
-                     <div class="contact__box contact__area">
-                        <textarea name="messaggio" id="message" class="contact__input" required
-                           placeholder="Messaggio"></textarea>
-                        <label for="message" class="contact__label">Messaggio</label>
-                     </div>
+                  <div class="contact__box contact__area">
+                     <textarea name="messaggio" id="message" class="contact__input link" required
+                        placeholder="Messaggio"></textarea>
+                     <label for="message" class="contact__label">Messaggio</label>
+                  </div>
 
-                  
+
 
                   <p class="contact__message" id="contact-message"></p>
 
 
-                  <button type="submit" class="contact__button button">
+                  <button type="submit" class="contact__button button link">
                      <i class="ri-send-plane-line"></i> Invia Messaggio
                   </button>
 
@@ -490,15 +566,15 @@
                   </div>
 
                   <div class="contact__social-links">
-                     <a href="https://www.facebook.com/" target="_blank" class="contact__social-link">
+                     <a href="https://www.facebook.com/" target="_blank" class="contact__social-link link">
                         <i class="ri-facebook-box-line"></i>
                      </a>
 
-                     <a href="https://www.instagram.com/" target="_blank" class="contact__social-link">
+                     <a href="https://www.instagram.com/" target="_blank" class="contact__social-link link">
                         <i class="ri-instagram-line"></i>
                      </a>
 
-                     <a href="https://www.linkedin.com/" target="_blank" class="contact__social-link">
+                     <a href="https://www.linkedin.com/" target="_blank" class="contact__social-link link">
                         <i class="ri-linkedin-box-line"></i>
                      </a>
                   </div>
@@ -508,6 +584,16 @@
 
          </div>
       </section>
+
+
+
+
+
+
+
+
+
+
    </main>
 
    <!--==================== FOOTER ====================-->
@@ -515,28 +601,28 @@
       <div class="footer__container container grid">
          <ul class="footer__links">
             <li>
-               <a href="#about" class="footer__link">About Me</a>
+               <a href="#about" class="footer__link link">About Me</a>
             </li>
 
             <li>
-               <a href="#servizi" class="footer__link">Servizi</a>
+               <a href="#competenze" class="footer__link link">Competenze</a>
             </li>
 
             <li>
-               <a href="#progetti" class="footer__link">Progetti</a>
+               <a href="#progetti" class="footer__link link">Progetti</a>
             </li>
          </ul>
 
          <span class="footer__copy">
-            &#169; All Rights Reserved By
-            <a href="#">Paolo Riccardo Grasso.</a>
+            &#169; Tutti i diritti riservati da
+            <a href="#" class="link">Paolo Riccardo Grasso.</a>
          </span>
 
       </div>
    </footer>
 
    <!--========== SCROLL UP ==========-->
-   <a href="#" class="scrollup" id="scroll-up">
+   <a href="#" class="scrollup link" id="scroll-up">
       <i class="ri-arrow-up-line"></i>
    </a>
 
