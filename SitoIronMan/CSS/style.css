@@ -1,0 +1,356 @@
+/*SEZIONE FONT*/
+
+@font-face {
+    font-family: 'IronManFont';
+    src: url('../Risorse/Font/IronManFont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../Risorse/Font/Montserrat.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat-Italic';
+    src: url('../Risorse/Font/Montserrat-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
+
+/*--------------------------------------*/
+
+body {
+    background: linear-gradient(180deg, #4B0908, #6A0C0B, #AA0505);
+}
+
+.home {
+    margin: 30px 60px;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
+.header {
+    position: relative;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+
+/* Video di background */
+#bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 1;
+    transition: opacity 5s ease-in-out !important;
+
+}
+
+
+/* Video di background */
+.header video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.menu-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img {
+    width: 100px;
+    height: auto;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.linea-verticale {
+    width: 2px;
+    height: 40px;
+    background-color: white;
+}
+
+.titolo-logo {
+    font-family: 'IronManFont', Arial, sans-serif;
+    font-size: 34px;
+    letter-spacing: 1.5px;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Menu styling */
+.menu {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.menu li a {
+    text-decoration: none;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 600;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    transition: all 0.3s ease;
+    padding: 5px 10px;
+}
+
+.menu a:hover {
+    color: #FBCA03;
+    text-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+    transform: scale(1.1);
+}
+
+.titolo {
+    font-family: 'IronManFont', serif;
+    letter-spacing: 5px;
+    font-size: 120px;
+    /* Dimensione del font */
+    color: white;
+    /* Colore interno del testo */
+    margin: 40px;
+    margin-top: 90px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.descrizione {
+    font-family: 'Montserrat', serif;
+    color: white;
+    font-size: 18px;
+    margin-top: -30px;
+    margin-left: 40px;
+    /* Margine sinistro di 40px */
+    word-wrap: break-word;
+    /* Forza la parola ad andare a capo se è troppo lunga */
+    line-height: 1.5;
+    /* Migliora la leggibilità del testo */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+
+.button-container {
+    display: flex;
+    gap: 20px;
+    /* Distanza tra i bottoni */
+    margin-top: 20px;
+    /* Distanza dal testo */
+    margin-left: 40px;
+}
+
+.watch-now,
+.more-info {
+    font-family: 'Montserrat', serif;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #FF4500;
+    /* Colore di sfondo arancione */
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+.watch-now i {
+    margin-right: 8px;
+    /* Distanza tra l'icona e la scritta */
+}
+
+.watch-now:hover,
+.more-info:hover {
+    background-color: #FF6347;
+    /* Colore di sfondo quando il bottone è in hover */
+}
+
+
+.more-info {
+    border-radius: 20px;
+    /* Angoli arrotondati */
+    padding: 12px 25px;
+    background-color: #0066cc;
+    /* Colore di sfondo blu */
+}
+
+.more-info:hover {
+    background-color: #005bb5;
+    /* Colore di sfondo blu scuro quando in hover */
+}
+
+.home {
+    position: relative;
+    /* Mantiene il controllo del layout del div */
+    margin: 30px 60px;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
+.iron-img {
+    width: 100%;
+    /* L'immagine si adatta alla larghezza del div */
+    max-width: 500px;
+    /* Mantiene la larghezza massima dell'immagine */
+    height: auto;
+    /* Mantiene le proporzioni originali dell'immagine */
+    object-fit: contain;
+    /* L'immagine si adatta senza deformarsi */
+    opacity: 1;
+    /* Leggera trasparenza */
+    margin-top: -450px;
+    /* Distanza dall'alto del div */
+    margin-left: 700px;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 82%, rgba(0, 0, 0, 0) 90%);
+
+}
+
+.storia {
+    margin-top: -100px;
+}
+
+.titolo-storia {
+    font-family: 'IronManFont', Arial, sans-serif;
+    font-size: 70px;
+    text-align: center;
+    letter-spacing: 1.5px;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.badge, .card-title{
+    font-family: "Inter", sans-serif;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+}
+
+.card-list .card-item {
+    list-style: none;
+}
+
+
+.card-list .card-item .card-link{
+    width: 400px;
+    display: block;
+    background: white;
+    padding: 18px;
+    border-radius: 20px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+    transition: 0.2s ease;
+}
+
+.card-list .card-item .card-link:hover{
+    border-color: #5372F0;
+}
+
+
+.card-list .card-link .card-image {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.card-list .card-link .badge{
+    color: #AA0505;
+    padding: 8px 16px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin: 16px 0 18px;
+    background-color: #DDE4FF;
+    width: fit-content;
+    border-radius: 50px;
+
+}
+
+
+.card-list .card-link .badge.imgstoria{
+    color: #0066cc;
+    background: #000;
+}
+
+.card-list .card-link .badge.imgstoria1{
+    color: #0066cc;
+    background: #fff;
+}
+
+.card-list .card-link .badge.imgstoria2{
+    color: #0066cc;
+    background: #421;
+}
+
+.card-list .card-link .badge.imgstoria3{
+    color: #0066cc;
+    background: #785;
+}
+
+.card-list .card-link .badge.imgstoria4{
+    color: #0066cc;
+    background: #221;
+}
+
+
+
+
+.card-list .card-link .card-title{
+    font-size: 1.19rem;
+    color: #000;
+    font-weight: 600;
+}
+
+.card-list .card-link .card-button {
+    height: 35px;
+    width: 35px;
+    color: #5372F0;
+    border-radius: 50%;
+    margin: 30px 0 5px;
+    background: none;
+    cursor: pointer;
+    border: 2px solid #5372F0;
+    transform: rotate(-45deg);
+    transition: 0.4s ease;
+}
+
+.card-list .card-link:hover .card-button{
+    color: #fff;
+    background: #5372F0;
+}
