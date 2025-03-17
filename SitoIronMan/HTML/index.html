@@ -7,9 +7,11 @@
     <title>Iron Man - Homepage</title>
     <link rel="icon" href="../Risorse/Foto/IconIronMan.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
     <link rel="stylesheet" href="../CSS/style.css">
-    <script src="../JAVASCRIPT/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
 
 
@@ -70,53 +72,60 @@
             <h1 class="titolo-storia">History</h1>
         </a>
 
-        <div class="container">
+        <div class="container swiper">
             <div class="card-wrapper">
-                <ul class="card-list">
-                    <li class="card-item">
+                <ul class="card-list swiper-wrapper">
+                    <li class="card-item swiper-slide">
                         <a href="#" class="card-link">
                             <img src="../Risorse/Foto/imgstoria.webp" alt="Immagine" class="card-image">
-                            <p class="badge imgstoria">Sto cazzo</p>
+                            <p class="badge imgstoria">Character Origins</p>
+                            <p class="card-title">Iron Man, creato da <strong>Stan Lee</strong>, <strong>Larry
+                                    Lieber</strong>, <strong>Don Heck</strong> e <strong>Jack Kirby</strong> nel
+                                <strong>1963</strong>, debutta in <em>Tales of Suspense #39</em>.
+                                <br><br>
+                                <strong>Tony Stark</strong>, geniale miliardario, costruisce la sua prima armatura per
+                                sfuggire ai suoi rapitori e sopravvivere a una ferita mortale, trasformandosi così in un
+                                eroe.
+                            </p>
+                            <button class="card-button material-symbols-outlined">
+                                arrow_forward
+                            </button>
+                        </a>
+                    </li>
+                    <li class="card-item swiper-slide">
+                        <a href="#" class="card-link">
+                            <img src="../Risorse/Foto/imgstoria.webp" alt="Immagine" class="card-image">
+                            <p class="badge imgstoria1">Prova 2</p>
                             <h2 class="card-title">Prova prova 11111 22222 3333</h2>
                             <button class="card-button material-symbols-outlined">
                                 arrow_forward
                             </button>
                         </a>
                     </li>
-                    <li class="card-item">
+                    <li class="card-item swiper-slide">
                         <a href="#" class="card-link">
                             <img src="../Risorse/Foto/imgstoria.webp" alt="Immagine" class="card-image">
-                            <p class="badge imgstoria1">Sto cazzo</p>
+                            <p class="badge imgstoria2">Prova 3</p>
                             <h2 class="card-title">Prova prova 11111 22222 3333</h2>
                             <button class="card-button material-symbols-outlined">
                                 arrow_forward
                             </button>
                         </a>
                     </li>
-                    <li class="card-item">
+                    <li class="card-item swiper-slide">
                         <a href="#" class="card-link">
                             <img src="../Risorse/Foto/imgstoria.webp" alt="Immagine" class="card-image">
-                            <p class="badge imgstoria2">Sto cazzo</p>
+                            <p class="badge imgstoria3">Prova 4</p>
                             <h2 class="card-title">Prova prova 11111 22222 3333</h2>
                             <button class="card-button material-symbols-outlined">
                                 arrow_forward
                             </button>
                         </a>
                     </li>
-                    <li class="card-item">
+                    <li class="card-item swiper-slide">
                         <a href="#" class="card-link">
                             <img src="../Risorse/Foto/imgstoria.webp" alt="Immagine" class="card-image">
-                            <p class="badge imgstoria3">Sto cazzo</p>
-                            <h2 class="card-title">Prova prova 11111 22222 3333</h2>
-                            <button class="card-button material-symbols-outlined">
-                                arrow_forward
-                            </button>
-                        </a>
-                    </li>
-                    <li class="card-item">
-                        <a href="#" class="card-link">
-                            <img src="../Risorse/Foto/imgstoria.webp" alt="Immagine" class="card-image">
-                            <p class="badge imgstoria4">Sto cazzo</p>
+                            <p class="badge imgstoria4">Prova 5</p>
                             <h2 class="card-title">Prova prova 11111 22222 3333</h2>
                             <button class="card-button material-symbols-outlined">
                                 arrow_forward
@@ -124,15 +133,23 @@
                         </a>
                     </li>
                 </ul>
+
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+
             </div>
         </div>
 
 
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 
 
+    <script src="../JAVASCRIPT/script.js" defer></script>
 </body>
 
 

@@ -249,9 +249,20 @@ body {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
-.badge, .card-title{
-    font-family: "Inter", sans-serif;
+.badge {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    color: #494949;
 }
+
+.card-title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    color: #000000 !important;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+
 
 .container{
     display: flex;
@@ -265,11 +276,20 @@ body {
     list-style: none;
 }
 
+.card-wrapper{
+    max-width: 1200px;
+    margin: 0  60px 35px;
+    padding: 20px 10px;
+    overflow: hidden;
+}
+
 
 .card-list .card-item .card-link{
-    width: 400px;
-    display: block;
-    background: white;
+    user-select: none;
+    display: block; 
+    background-image: url('../Risorse/Foto/1398.jpg');
+    background-size: 200%; /* Riduce l'immagine al 50% della sua dimensione originale */
+    background-repeat: no-repeat; /* Evita la ripetizione */
     padding: 18px;
     border-radius: 20px;
     text-decoration: none;
@@ -304,8 +324,8 @@ body {
 
 
 .card-list .card-link .badge.imgstoria{
-    color: #0066cc;
-    background: #000;
+    color: #ffffff;
+    background: #aa0505ad;
 }
 
 .card-list .card-link .badge.imgstoria1{
@@ -331,7 +351,7 @@ body {
 
 
 
-.card-list .card-link .card-title{
+.card-list .card-link {
     font-size: 1.19rem;
     color: #000;
     font-weight: 600;
