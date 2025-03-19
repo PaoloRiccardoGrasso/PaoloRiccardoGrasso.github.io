@@ -8,6 +8,27 @@
 }
 
 @font-face {
+    font-family: 'Spiderman';
+    src: url('../Risorse/Font/Spiderman-Homecoming.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CaptainAmerica';
+    src: url('../Risorse/Font/American\ Captain.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Avengers';
+    src: url('../Risorse/Font/AVENGEANCE\ HEROIC\ AVENGER.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Montserrat';
     src: url('../Risorse/Font/Montserrat.ttf') format('truetype');
     font-weight: normal;
@@ -764,4 +785,52 @@ section{
 
 a {
     text-decoration: none; /* Rimuove la sottolineatura */
+}
+
+.name-secondo{
+    text-transform: uppercase;
+    font-weight: bold;
+    opacity: 0;
+    animation: animate 1s ease-in-out 1 forwards;
+    font-family: 'Avengers', Arial, sans-serif;
+    font-size: 50px;
+    letter-spacing: 1.5px;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.name-terzo{
+    text-transform: uppercase;
+    font-weight: bold;
+    opacity: 0;
+    animation: animate 1s ease-in-out 1 forwards;
+    font-family: 'Avengers', Arial, sans-serif;
+    font-size: 30px;
+    letter-spacing: 1.5px;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.name-quarto{
+    text-transform: uppercase;
+    font-weight: bold;
+    opacity: 0;
+    animation: animate 1s ease-in-out 1 forwards;
+    font-family: 'CaptainAmerica', Arial, sans-serif;
+    font-size: 45px;
+    letter-spacing: 1.5px;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.name-quinto{
+    text-transform: uppercase;
+    font-weight: bold;
+    opacity: 0;
+    animation: animate 1s ease-in-out 1 forwards;
+    font-family: 'Spiderman', Arial, sans-serif;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
