@@ -26,7 +26,7 @@
 /*--------------------------------------*/
 
 body {
-    background: linear-gradient(180deg, #4B0908, #6A0C0B, #AA0505);
+    background: linear-gradient(180deg, #4B0908, #6A0C0B, #AA0505, #4B0908, #6A0C0B, #AA0505);
 }
 
 .home {
@@ -200,12 +200,12 @@ body {
     border-radius: 20px;
     /* Angoli arrotondati */
     padding: 12px 25px;
-    background-color: #0066cc;
+    background-color: #FBCA03;
     /* Colore di sfondo blu */
 }
 
 .more-info:hover {
-    background-color: #005bb5;
+    background-color: #FBCA03;
     /* Colore di sfondo blu scuro quando in hover */
 }
 
@@ -229,7 +229,7 @@ body {
     /* L'immagine si adatta senza deformarsi */
     opacity: 1;
     /* Leggera trasparenza */
-    margin-top: -450px;
+    margin-top: -400px;
     /* Distanza dall'alto del div */
     margin-left: 700px;
     mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 82%, rgba(0, 0, 0, 0) 90%);
@@ -258,7 +258,7 @@ body {
 .card-title {
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
-    color: #000000 !important;
+    color: #fff;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
@@ -284,22 +284,33 @@ body {
 }
 
 
-.card-list .card-item .card-link{
+.card-list .card-item .card-link {
     user-select: none;
-    display: block; 
-    background-image: url('../Risorse/Foto/1398.jpg');
-    background-size: 200%; /* Riduce l'immagine al 50% della sua dimensione originale */
-    background-repeat: no-repeat; /* Evita la ripetizione */
+    display: block;
+    background: linear-gradient(135deg, #ff302c 0%, #ce1511 50%, #cf0707 100%); /* Rosso e oro Iron Man */
+    background-size: 400% 400%;
+    animation: ironmanGlow 6s ease infinite;
     padding: 18px;
     border-radius: 20px;
     text-decoration: none;
-    border: 2px solid transparent;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
-    transition: 0.2s ease;
+    border: 2px solid #FBCA03; /* Bordo dorato */
+    box-shadow: 0 10px 20px rgba(255, 0, 0, 0.7), 0 0 20px #FBCA03;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-list .card-item .card-link:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(255, 0, 0, 0.9), 0 0 25px #FBCA03;
+}
+
+@keyframes ironmanGlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 .card-list .card-item .card-link:hover{
-    border-color: #5372F0;
+    border-color: #FBCA03;
 }
 
 
@@ -329,23 +340,23 @@ body {
 }
 
 .card-list .card-link .badge.imgstoria1{
-    color: #0066cc;
-    background: #fff;
+    color: #ffffff;
+    background: #c59224ad;;
 }
 
 .card-list .card-link .badge.imgstoria2{
-    color: #0066cc;
-    background: #421;
+    color: #ffffff;
+    background: #3fc838ad;;
 }
 
 .card-list .card-link .badge.imgstoria3{
-    color: #0066cc;
-    background: #785;
+    color: #ffffff;
+    background: #38807ead;
 }
 
 .card-list .card-link .badge.imgstoria4{
-    color: #0066cc;
-    background: #221;
+    color: #ffffff;
+    background: #7a4082ad;
 }
 
 
@@ -360,17 +371,387 @@ body {
 .card-list .card-link .card-button {
     height: 35px;
     width: 35px;
-    color: #5372F0;
+    color: #FBCA03;
     border-radius: 50%;
     margin: 30px 0 5px;
     background: none;
     cursor: pointer;
-    border: 2px solid #5372F0;
+    border: 2px solid #FBCA03;
     transform: rotate(-45deg);
     transition: 0.4s ease;
 }
 
 .card-list .card-link:hover .card-button{
     color: #fff;
-    background: #5372F0;
+    background: #FBCA03;
+}
+
+.card-list {
+    display: flex;
+    gap: 20px; /* Distanza uniforme tra gli elementi */
+}
+
+.textButton{
+    margin-top: -33px;
+    margin-left: 45px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.swiper-pagination .swiper-button-prev .swiper-button-next{
+    color: #FBCA03;
+}
+
+section{
+    padding: 100px 200px;
+}
+
+.containerprinc{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: #FBCA03;
+}
+
+.movies .containerprinc{
+    z-index: 888;
+    color: white;
+    width: 70%;
+    margin-top: 50px;
+}
+
+.movies .containerprinc h1{
+    font-family: 'IronManFont', serif;
+    letter-spacing: 5px;
+    font-size: 120px;
+    color: #000;
+    font-size: 4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 75px;
+    margin-bottom: 40px;
+}
+
+.movies .containerprinc h1 span{
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.movies .containerprinc p{
+    margin-bottom: 65px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    color: #000000;
+}
+
+.movies .containerprinc a{
+    background: white;
+    padding: 15px 35px;
+    color: #1680AC;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-decoration: none;
+    border-radius: 2px
+}
+
+.containerprinc video{
+    z-index: 000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Cambia il colore della paginazione */
+.swiper-pagination-bullet {
+    background-color: #FBCA03 !important;
+}
+
+.swiper-button-prev::after {
+    color: #FBCA03 !important;
+}
+
+/* Cambia il colore delle frecce del bottone successivo */
+.swiper-button-next::after {
+    color: #FBCA03 !important;
+}
+
+
+
+
+
+
+/*-----------------------------------SEZIONE VIDEO-----------------------------------*/
+
+.containerpollo {
+    position: relative;
+    width: 100%; /* Adatta alla larghezza del contenitore/schermo */
+    max-width: 100vw; /* Forza il massimo a tutta la viewport */
+    height: 100vh; /* Mantiene altezza a tutto schermo */
+    background: #f5f5f5;
+    left: 0;
+    top: 0;
+    transform: none;
+    margin-top: 0;
+    overflow: hidden; /* Evita che qualcosa sbordi */
+}
+
+
+
+
+
+
+.containerpollo .slide .item{
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    border-radius: 20px;
+    background-position: 50% 50%;
+    background-size: cover;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.slide .item:nth-child(1),
+.slide .item:nth-child(2){
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+    border-radius: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.slide .item:nth-child(3){
+    left: 50%;
+}
+.slide .item:nth-child(4){
+    left: calc(50% + 220px);
+}
+.slide .item:nth-child(5){
+    left: calc(50% + 440px);
+}
+
+/* here n = 0, 1, 2, 3,... */
+.slide .item:nth-child(n + 6){
+    left: calc(50% + 660px);
+    opacity: 0;
+}
+
+
+
+.item {
+    position: relative;
+    width: 200px;
+    height: 300px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+/* Immagine visibile di default */
+.item img.cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+/* Il video nascosto di default */
+.item video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+.item .content{
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    width: 300px;
+    text-align: left;
+    color: #eee;
+    transform: translate(0, -50%);
+    font-family: system-ui;
+    display: none;
+}
+
+
+.slide .item:nth-child(2) .content{
+    display: block;
+}
+
+
+.content .name{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+    opacity: 0;
+    animation: animate 1s ease-in-out 1 forwards;
+}
+
+.content .des{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    opacity: 0;
+    animation: animate 1s ease-in-out 0.3s 1 forwards;
+}
+
+.content button{
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    animation: animate 1s ease-in-out 0.6s 1 forwards;
+}
+
+
+@keyframes animate {
+    from{
+        opacity: 0;
+        transform: translate(0, 100px);
+        filter: blur(33px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translate(0);
+        filter: blur(0);
+    }
+}
+
+
+
+.button{
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+}
+
+.button button{
+    width: 40px;
+    height: 35px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+    border: 1px solid #000;
+    transition: 0.3s;
+}
+
+.button button:hover{
+    background: #ababab;
+    color: #fff;
+}
+
+.name-primo{
+    text-transform: uppercase;
+    font-weight: bold;
+    opacity: 0;
+    animation: animate 1s ease-in-out 1 forwards;
+    font-family: 'IronManFont', Arial, sans-serif;
+    font-size: 64px;
+    letter-spacing: 1.5px;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.des{
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.containerpollo {
+    width: 90%;
+    max-width: 1800px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.3), 
+                0 0 25px rgba(180, 0, 0, 0.5), 
+                0 0 35px rgba(120, 0, 0, 0.7);
+    background-color: #111;
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+/* Ombra cambia tonalità di rosso al passaggio */
+.containerpollo:hover {
+    box-shadow: 0 0 20px rgba(255, 50, 50, 0.5), 
+                0 0 30px rgba(200, 20, 20, 0.7), 
+                0 0 40px rgba(150, 0, 0, 0.9);
+}
+
+/* Miglioro anche la slide per stare più compatta */
+.slide {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonFilm {
+    background-color: transparent; /* Sfondo trasparente */
+    color: #fff; /* Testo bianco */
+    border-radius: 50px; /* Bottoncino bello stondato */
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.4s ease, color 0.4s ease, box-shadow 0.4s ease; /* Animazione della traccia e del colore */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Ombra nera sul testo */
+    box-shadow: 0 0 0 2px #fff; /* Traccia bianca esterna */
+}
+
+/* Effetto hover: diventa giallo con ombra gialla esterna */
+.buttonFilm:hover {
+    background-color: #FBCA03; /* Giallo dorato */
+    color: #111; /* Testo scuro per contrasto */
+    box-shadow: 0 0 8px 4px #FBCA03; /* Traccia gialla esterna e ombra */
+}
+
+
+/* Applicazione animazione all'immagine imgFilm */
+.item .imgFIlm {
+    opacity: 0; /* L'immagine è invisibile inizialmente */
+    animation: animateImage 1s ease-in-out 1 forwards; /* Applica l'animazione di fade-in e movimento */
+}
+
+/* Definizione dell'animazione */
+@keyframes animateImage {
+    from {
+        opacity: 0; /* L'immagine è invisibile inizialmente */
+        transform: translate(0, 100px); /* Si sposta verso il basso */
+        filter: blur(33px); /* L'immagine inizia con il blur */
+    }
+    to {
+        opacity: 1; /* Diventa visibile */
+        transform: translate(0); /* Torna alla posizione originale */
+        filter: blur(0); /* Rimuove il blur */
+    }
+}
+
+/* Impostare dimensioni uniformi per tutte le immagini con la classe .imgFIlm */
+.imgFIlm {
+    width: auto;   /* Imposta la larghezza desiderata (puoi cambiare il valore in base alle tue necessità) */
+    height: 20px;  /* Imposta l'altezza desiderata */
+    object-fit: cover; /* Mantiene il corretto rapporto di aspetto e taglia l'immagine se necessario */
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombra leggera */
 }
