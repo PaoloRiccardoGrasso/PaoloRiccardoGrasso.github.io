@@ -755,3 +755,13 @@ section{
     margin-bottom: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombra leggera */
 }
+
+.buttonFilm {
+    display: block;
+    margin-top: 5px; /* Spazio tra il bottone e le immagini */
+    width: 40%; /* Opzionale, per fare in modo che il bottone occupi tutta la larghezza disponibile */
+}
+
+a {
+    text-decoration: none; /* Rimuove la sottolineatura */
+}
