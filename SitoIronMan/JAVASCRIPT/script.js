@@ -1,68 +1,59 @@
+// Inizializzazione di Swiper
+// Questo blocco inizializza un'istanza di Swiper per l'elemento '.card-wrapper'.
+// Configura lo spazio tra le slide, il numero di slide visibili a diverse dimensioni dello schermo
+// e abilita i controlli di paginazione e navigazione.
 new Swiper('.card-wrapper', {
     spaceBetween: 30,
-  
-    // If we need pagination
+    slidesPerView: 1,
+
     pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-      dynamicBullets: true,
+        el: '.swiper-pagination',
+        clickable: true,
+        dynamicBullets: true,
     },
-  
-    // Navigation arrows
+
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
     },
-  
+
     breakpoints: {
-        0 : {
-            slidesPerView: 1
-        },
-        768: {
-            slidesPerView: 2
-        }, 
-        1024: {
-            slidesPerView: 3
-        }
+        768: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 }
     }
+});
 
-  });
+// Movies Section
 
+const nextButton = document.querySelector('.next');
+const prevButton = document.querySelector('.prev');
+const slideContainer = document.querySelector('.slide');
 
+nextButton.addEventListener('click', () => {
+    const items = document.querySelectorAll('.item');
+    slideContainer.appendChild(items[0]);
+});
 
-
-
-  let next = document.querySelector('.next')
-let prev = document.querySelector('.prev')
-
-next.addEventListener('click', function(){
-    let items = document.querySelectorAll('.item')
-    document.querySelector('.slide').appendChild(items[0])
-})
-
-prev.addEventListener('click', function(){
-    let items = document.querySelectorAll('.item')
-    document.querySelector('.slide').prepend(items[items.length - 1]) // here the length of items = 6
-})
-
-
+prevButton.addEventListener('click', () => {
+    const items = document.querySelectorAll('.item');
+    slideContainer.prepend(items[items.length - 1]);
+});
 
 document.querySelectorAll('.item').forEach(item => {
     const video = item.querySelector('video');
     const cover = item.querySelector('img.cover');
 
-    // Quando entri nell'item
     item.addEventListener('mouseenter', () => {
         cover.style.opacity = "0";
         video.style.opacity = "1";
         video.play();
     });
 
-    // Quando esci dall'item
     item.addEventListener('mouseleave', () => {
         cover.style.opacity = "1";
         video.style.opacity = "0";
         video.pause();
-        video.currentTime = 0; // Riavvia il video
+        video.currentTime = 0;
     });
 });
+
