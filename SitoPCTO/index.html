@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Sito web portfolio illustrativo dei progetti FSL (Formazione Scuola Lavoro) dello studente Paolo Riccardo Grasso. Struttura tecnica suddivisa in Terzo, Quarto e Quinto anno.">
+  <title>Paolo Riccardo Grasso | Portfolio PCTO & FSL</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="tech-theme">
+
+  <!-- Background Grid & Glow Effects -->
+  <div class="bg-grid"></div>
+  <div class="glow-sphere glow-sphere-1"></div>
+  <div class="glow-sphere glow-sphere-2"></div>
+
+  <!-- Header & Navigation -->
+  <header class="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <span class="brand-code">&lt;PRG&gt;</span>
+        <span class="brand-name">Paolo Riccardo Grasso</span>
+        <span class="status-indicator"></span>
+      </div>
+      <nav class="nav-menu">
+        <a href="#terzo-anno" class="nav-link active" data-section="terzo-anno">
+          <span class="nav-num">03.</span> Terzo Anno
+        </a>
+        <a href="#quarto-anno" class="nav-link" data-section="quarto-anno">
+          <span class="nav-num">04.</span> Quarto Anno
+        </a>
+        <a href="#quinto-anno" class="nav-link" data-section="quinto-anno">
+          <span class="nav-num">05.</span> Quinto Anno
+        </a>
+      </nav>
+      <div class="nav-meta">
+        <span class="system-status"><i class="fa-solid fa-microchip"></i> FSL_SYS: ACTIVE</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-container">
+      <div class="hero-left">
+        <div class="tagline">// PORTFOLIO FSL / PCTO</div>
+        <h1 class="hero-title">Formazione <span class="highlight">Scuola Lavoro</span></h1>
+        <p class="hero-subtitle">
+          Sono <strong>Paolo Riccardo Grasso</strong> e ho creato questo sito web esclusivamente per presentare i miei
+          progetti e le mie esperienze tecniche e informatiche per i percorsi FSL (Formazione Scuola Lavoro).
+        </p>
+        <div class="hero-actions">
+          <a href="#terzo-anno" class="btn btn-primary">Esplora Progetti <i class="fa-solid fa-arrow-down"></i></a>
+          <a href="https://github.com/PaoloRiccardoGrasso" target="_blank" class="btn btn-secondary"><i
+              class="fa-brands fa-github"></i>
+            GitHub</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <!-- Terminal Emulator Widget -->
+        <div class="terminal-window">
+          <div class="terminal-header">
+            <div class="terminal-buttons">
+              <span class="term-btn close"></span>
+              <span class="term-btn minimize"></span>
+              <span class="term-btn maximize"></span>
+            </div>
+            <div class="terminal-title">student@grasso-portfolio:~</div>
+          </div>
+          <div class="terminal-body">
+            <div class="terminal-line"><span class="prompt">guest@grasso-pc:~$</span> <span
+                class="command">neofetch</span></div>
+            <div class="neofetch-output">
+              <div class="neofetch-logo">
+                <pre>
+   /\___/\
+  (  o o  )
+  (  =^=  )
+   (_____)
+    |   |
+                </pre>
+              </div>
+              <div class="neofetch-info">
+                <span class="info-label">STUDENTE:</span> Paolo Riccardo Grasso<br>
+                <span class="info-label">PROGETTI:</span> 10 Elementi FSL<br>
+                <span class="info-label">DURATA:</span> Triennio 2023 - 2026<br>
+                <span class="info-label">INDIRIZZO:</span> Tecnico / Informatico<br>
+                <span class="info-label">SHELL:</span> bash 5.2<br>
+                <span class="info-label">STATUS:</span> In fase di caricamento...
+              </div>
+            </div>
+            <div class="terminal-line"><span class="prompt">guest@grasso-pc:~$</span> <span class="command">cat
+                readme.txt</span></div>
+            <div class="terminal-line text-muted">Il sito presenta la struttura grafica per ospitare immagini e
+              descrizioni ufficiali di ciascun progetto svolto durante i percorsi FSL.</div>
+            <div class="terminal-line"><span class="prompt">guest@grasso-pc:~$</span> <span class="cursor">_</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content Grid -->
+  <main class="main-content">
+
+    <!-- SEZIONE TERZO ANNO -->
+    <section id="terzo-anno" class="year-section">
+      <div class="section-header">
+        <div class="section-tag">ANNO SCOLASTICO 2023 / 2024</div>
+        <h2 class="section-title"><span class="section-num">03.</span> Terzo Anno</h2>
+        <div class="header-line"></div>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- CARD: Premio Asimov -->
+        <article class="project-card">
+          <div class="card-header">
+            <div class="window-controls">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+            <span class="card-meta-tag">FSL-3.01</span>
+          </div>
+          <div class="card-content">
+            <h3 class="project-title">Premio Asimov</h3>
+            <div class="project-meta">
+              <div class="meta-item">
+                <span class="meta-lbl">STRUTTURA OSPITANTE</span>
+                <span class="meta-val">Premio Scientifico Nazionale</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-lbl">PERIODO</span>
+                <span class="meta-val">07/11/23 - 06/06/24</span>
+              </div>
+            </div>
+            <div class="project-desc">
+              <p class="placeholder-text">Durante l’anno scolastico 2023/2024, nell'ambito dei percorsi di Formazione
+                Scuola Lavoro (FSL), ho
+                partecipato attivamente al progetto nazionale <strong>"Premio Asimov"</strong>, un'iniziativa di
+                eccellenza per la divulgazione scientifica. L'attività principale ha previsto lo studio, l'analisi e la
+                stesura di una recensione critica dedicata al saggio "L'universo su misura".</p>
+
+            </div>
+            <div class="gallery-wrapper">
+              <span class="gallery-label"><i class="fa-regular fa-images"></i> Galleria Fotografica (1 Foto)</span>
+              <div class="gallery-grid cols-1">
+                <img src="Photo/asimov2024.jpeg" alt="Esperienza Premio Asimov 2024">
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD: Prog. "Scuolaaumentata" Regione Basilicata + PSI -->
+        <article class="project-card">
+          <div class="card-header">
+            <div class="window-controls">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+            <span class="card-meta-tag">FSL-3.02</span>
+          </div>
+          <div class="card-content">
+            <h3 class="project-title">Prog. "Scuolaaumentata" Regione Basilicata + PSI</h3>
+            <div class="project-meta">
+              <div class="meta-item">
+                <span class="meta-lbl">STRUTTURA OSPITANTE</span>
+                <span class="meta-val">Regione Basilicata + PSN</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-lbl">PERIODO</span>
+                <span class="meta-val">13/04/24 - 04/06/24</span>
+              </div>
+            </div>
+            <div class="project-desc">
+              <p class="placeholder-text">Nel mio percorso di Formazione Scuola Lavoro (FSL), ho preso parte
+                all'innovativo progetto "Scuola Aumentata". L'obiettivo principale dell'attività è stato quello di
+                creare un ponte tra l'ambiente fisico del nostro istituto e il mondo digitale. Nello specifico, abbiamo
+                effettuato un'accurata mappatura 3D dei vari ambienti scolastici, dalle aule ai laboratori, per
+                predisporre gli spazi all'integrazione di elementi interattivi in Realtà Aumentata (AR). Questa
+                esperienza mi ha permesso di unire le competenze informatiche con quelle di rilievo spaziale,
+                comprendendo l'intero flusso di lavoro necessario per sovrapporre informazioni digitali al mondo reale.
+                Grazie a questo progetto, ho contribuito allo sviluppo di una soluzione tecnologica pratica, pensata per
+                migliorare l'orientamento e l'interazione all'interno della scuola attraverso l'uso delle tecnologie
+                immersive.</p>
+            </div>
+            <div class="gallery-wrapper">
+              <span class="gallery-label"><i class="fa-regular fa-images"></i> Galleria Fotografica (1 Foto)</span>
+              <div class="gallery-grid cols-1">
+                <img src="Photo/scuolaaumentata.jpg" alt="Prog. Scuolaaumentata">
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD: Corso + Certificazione Cisco It Essential -->
+        <article class="project-card">
+          <div class="card-header">
+            <div class="window-controls">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+            <span class="card-meta-tag">FSL-3.03</span>
+          </div>
+          <div class="card-content">
+            <h3 class="project-title">Corso + Certificazione Cisco It Essential</h3>
+            <div class="project-meta">
+              <div class="meta-item">
+                <span class="meta-lbl">STRUTTURA OSPITANTE</span>
+                <span class="meta-val">VETA WEB</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-lbl">PERIODO</span>
+                <span class="meta-val">08/01/24 - 12/06/24</span>
+              </div>
+            </div>
+            <div class="project-desc">
+              <p class="placeholder-text">Nel mio percorso di Formazione Scuola Lavoro (FSL), ho frequentato il corso
+                Cisco "IT Essentials: PC Hardware and Software". Questa esperienza formativa mi ha permesso di acquisire
+                competenze pratiche fondamentali sull'assemblaggio, la configurazione e la manutenzione di computer e
+                dispositivi mobili. Durante il corso, ho imparato a identificare e installare in sicurezza i vari
+                componenti hardware (schede madri, CPU, RAM, unità di archiviazione) e ad amministrare i principali
+                sistemi operativi, come Windows e Linux. Ho inoltre esplorato i concetti base del networking e della
+                sicurezza informatica, essenziali per proteggere dispositivi e dati aziendali o personali. Grazie a un
+                approccio fortemente laboratoriale basato sulle logiche del troubleshooting, ho sviluppato la capacità
+                di diagnosticare e risolvere problemi tecnici sia hardware che software, costruendo solide basi per
+                operare nel settore dell'assistenza IT.</p>
+            </div>
+            <div class="gallery-wrapper">
+              <span class="gallery-label"><i class="fa-regular fa-images"></i> Galleria Fotografica (1 Foto)</span>
+              <div class="gallery-grid cols-1">
+                <img src="Photo/cisco_it_essential.jpg" alt="Corso Cisco It Essential">
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD: Corso di formazione sulla sicurezza sito INAIL -->
+        <article class="project-card">
+          <div class="card-header">
+            <div class="window-controls">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+            <span class="card-meta-tag">FSL-3.04</span>
+          </div>
+          <div class="card-content">
+            <h3 class="project-title">Corso di formazione sulla sicurezza sito INAIL</h3>
+            <div class="project-meta">
+              <div class="meta-item">
+                <span class="meta-lbl">STRUTTURA OSPITANTE</span>
+                <span class="meta-val">Piattaforma INAIL</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-lbl">PERIODO</span>
+                <span class="meta-val">28/03/24 - 29/03/24</span>
+              </div>
+            </div>
+            <div class="project-desc">
+              <p class="placeholder-text">Nel mio percorso di Formazione Scuola Lavoro (FSL), ho completato il corso
+                obbligatorio sulla Sicurezza e Salute nei luoghi di lavoro (D.Lgs. 81/08), sviluppato secondo le
+                direttive INAIL. Questo modulo fondamentale mi ha fornito le conoscenze necessarie per riconoscere,
+                valutare e prevenire i rischi associati agli ambienti lavorativi e ai laboratori scolastici. Durante le
+                lezioni, ho approfondito tematiche cruciali come l'uso corretto dei Dispositivi di Protezione
+                Individuale (DPI), le normative antincendio, l'ergonomia per l'uso dei videoterminali e le
+                responsabilità delle varie figure aziendali. Questa esperienza non solo mi ha certificato per l'accesso
+                sicuro ai successivi progetti operativi, ma mi ha anche trasmesso una forte consapevolezza
+                sull'importanza della prevenzione, insegnandomi a tutelare la mia salute e quella di chi mi circonda in
+                qualsiasi futuro contesto professionale.</p>
+            </div>
+            <div class="gallery-wrapper">
+              <span class="gallery-label"><i class="fa-regular fa-images"></i> Galleria Fotografica (1 Foto)</span>
+              <div class="gallery-grid cols-1">
+                <img src="Photo/sicurezza_inail.jpg" alt="Corso sicurezza INAIL">
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SEZIONE QUARTO ANNO -->
+    <section id="quarto-anno" class="year-section">
+      <div class="section-header">
+        <div class="section-tag">ANNO SCOLASTICO 2024 / 2025</div>
+        <h2 class="section-title"><span class="section-num">04.</span> Quarto Anno</h2>
+        <div class="header-line"></div>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- CARD: Maker Faire 2024 -->
+        <article class="project-card">
+          <div class="card-header">
+            <div class="window-controls">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+            <span class="card-meta-tag">FSL-4.01</span>
+          </div>
+          <div class="card-content">
+            <h3 class="project-title">Maker Faire 2024</h3>
+            <div class="project-meta">
+              <div class="meta-item">
+                <span class="meta-lbl">STRUTTURA OSPITANTE</span>
+                <span class="meta-val">Camera commercio di Roma presso Gazometro Ostiense</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-lbl">PERIODO</span>
+                <span class="meta-val">26/10/24</span>
+              </div>
+            </div>
+            <div class="project-desc">
+              <p class="placeholder-text">Nel mio percorso di Formazione Scuola Lavoro (FSL), ho avuto l'opportunità di
+                partecipare alla Maker Faire Rome 2024, il più grande evento europeo dedicato all'innovazione e alla
+                tecnologia. Questa fiera mi ha permesso di entrare in contatto diretto con il mondo dei "makers" e con
+                le tecnologie che plasmeranno il futuro del settore IT. Durante la visita, ho esplorato padiglioni
+                interattivi dedicati all'Intelligenza Artificiale, alla robotica, all'Internet of Things (IoT) e
+                all'elettronica applicata. Ho potuto osservare da vicino prototipi innovativi e interagire con start-up,
+                aziende e università. Questa esperienza immersiva è stata fondamentale per ampliare la mia visione
+                tecnica, mostrandomi le applicazioni pratiche delle competenze informatiche e di networking che studio a
+                scuola, e fornendomi grande ispirazione per lo sviluppo di nuovi progetti personali e scolastici.</p>
+            </div>
+            <div class="gallery-wrapper">
+              <span class="gallery-label"><i class="fa-regular fa-images"></i> Galleria Fotografica (1 Foto)</span>
+              <div class="gallery-grid cols-1">
+                <img src="Photo/maker_faire_2024.jpg" alt="Maker Faire 2024">
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD: Premio Asimov -->
+        <article class="project-card">
+          <div class="card-header">
+            <div class="window-controls">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+            <span class="card-meta-tag">FSL-4.02</span>
+          </div>
+          <div class="card-content">
+            <h3 class="project-title">Premio Asimov</h3>
+            <div class="project-meta">
+              <div class="meta-item">
+                <span class="meta-lbl">STRUTTURA OSPITANTE</span>
+                <span class="meta-val">Premio Scientifico Nazionale</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-lbl">PERIODO</span>
+                <span class="meta-val">04/11/24 - 10/06/25</span>
+              </div>
+            </div>
+            <div class="project-desc">
+              <p class="placeholder-text">Nel corso dell'anno scolastico 2024/2025, per il mio percorso di Formazione
+                Scuola Lavoro (FSL), ho partecipato alla nuova edizione del progetto nazionale "Premio Asimov".
+                Quest'anno ho scelto di analizzare e recensire l'opera autobiografica e scientifica di Katalin Karikó,
+                scienziata e Premio Nobel. Attraverso questa lettura, ho esplorato la rivoluzionaria tecnologia dell'RNA
+                messaggero (mRNA) e le sue applicazioni fondamentali nella medicina moderna. Questa esperienza mi ha
+                permesso non solo di comprendere concetti biochimici affascinanti, ma anche di riflettere
+                sull'importanza della resilienza e della perseveranza nella ricerca. La stesura della recensione critica
+                ha ulteriormente rafforzato le mie capacità di analisi testuale, sintesi e divulgazione scientifica,
+                dimostrandomi quanto sia cruciale saper comunicare l'innovazione in modo chiaro e accessibile.</p>
+            </div>
+            <div class="gallery-wrapper">
+              <span class="gallery-label"><i class="fa-regular fa-images"></i> Galleria Fotografica (1 Foto)</span>
+              <div class="gallery-grid cols-1">
+                <img src="Photo/asimov2025.jpg" alt="Premio Asimov 2025">
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD: Corso + cert. CCNA 1: Introduction to networks -->
+        <article class="project-card">
+          <div class="card-header">
+            <div class="window-controls">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+            <span class="card-meta-tag">FSL-4.03</span>
+          </div>
+          <div class="card-content">
+            <h3 class="project-title">Corso + cert. CCNA 1: Introduction to networks</h3>
+            <div class="project-meta">
+              <div class="meta-item">
+                <span class="meta-lbl">STRUTTURA OSPITANTE</span>
+                <span class="meta-val">VETA WEB</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-lbl">PERIODO</span>
+                <span class="meta-val">08/01/25 - 03/06/25</span>
+              </div>
+            </div>
+            <div class="project-desc">
+              <p class="placeholder-text">Durante il mio percorso di Formazione Scuola Lavoro (FSL) ho frequentato il
+                modulo Cisco "CCNA 1: Introduction to Networks". Questo corso mi ha introdotto ai fondamenti delle reti
+                informatiche, permettendomi di studiare l'architettura, la struttura e il funzionamento dei dispositivi
+                di rete. Attraverso lo studio dei modelli OSI e TCP/IP e la pratica sul subnetting (IPv4 e IPv6), ho
+                imparato a progettare e configurare reti locali (LAN). L'esperienza ha unito la teoria a intense
+                sessioni pratiche, fornendomi competenze tecniche indispensabili per comprendere come i dati viaggiano e
+                vengono protetti all'interno di un'infrastruttura informatica aziendale.</p>
+            </div>
+            <div class="gallery-wrapper">
+              <span class="gallery-label"><i class="fa-regular fa-images"></i> Galleria Fotografica (1 Foto)</span>
+              <div class="gallery-grid cols-1">
+                <img src="Photo/ccna1.jpg" alt="Cisco CCNA 1">
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SEZIONE QUINTO ANNO -->
+    <section id="quinto-anno" class="year-section">
+      <div class="section-header">
+        <div class="section-tag">ANNO SCOLASTICO 2025 / 2026</div>
+        <h2 class="section-title"><span class="section-num">05.</span> Quinto Anno</h2>
+        <div class="header-line"></div>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- CARD: Progetto "Learn to Grow Softer Future" -->
+        <article class="project-card">
+          <div class="card-header">
+            <div class="window-controls">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+            <span class="card-meta-tag">FSL-5.01</span>
+          </div>
+          <div class="card-content">
+            <h3 class="project-title">Progetto "Learn to Grow Softer Future"</h3>
+            <div class="project-meta">
+              <div class="meta-item">
+                <span class="meta-lbl">STRUTTURA OSPITANTE</span>
+                <span class="meta-val">BetFlag S.p.a. Tito</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-lbl">PERIODO</span>
+                <span class="meta-val">07/01/26 - 16/01/26</span>
+              </div>
+            </div>
+            <div class="project-desc">
+              <p class="placeholder-text">Nell'ambito dei percorsi di Formazione Scuola Lavoro (FSL), ho partecipato
+                alla seconda edizione del progetto "Learn to Grow - Softer Future", ospitato presso l'headquarter di
+                BetFlag a Tito. Durante questa esperienza immersiva di 40 ore, ho vissuto in prima persona le dinamiche
+                di una vera realtà aziendale IT. Il percorso ha unito aspetti tecnici, come i workshop su coding e
+                problem solving, allo sviluppo fondamentale delle soft skills. Attraverso laboratori Agile (tra cui
+                Scrum Lego City e Marshmallow Challenge) e simulazioni di colloqui lavorativi, ho compreso l'importanza
+                del lavoro in team, del pensiero strategico e delle metodologie di sviluppo moderne. È stata
+                un'esperienza formativa eccellente che ha creato un ponte concreto tra l'ambiente scolastico e le reali
+                dinamiche del mondo lavorativo.</p>
+            </div>
+            <div class="gallery-wrapper">
+              <span class="gallery-label"><i class="fa-regular fa-images"></i> Galleria Fotografica (1 Foto)</span>
+              <div class="gallery-grid cols-1">
+                <img src="Photo/learn_to_grow.jpg" alt="Progetto Learn to Grow">
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD: Corso + cert. CCNA2: Switching, Routing & Wireless Essentials -->
+        <article class="project-card">
+          <div class="card-header">
+            <div class="window-controls">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+            <span class="card-meta-tag">FSL-5.02</span>
+          </div>
+          <div class="card-content">
+            <h3 class="project-title">Corso + cert. CCNA2: Switching, Routing & Wireless Essentials</h3>
+            <div class="project-meta">
+              <div class="meta-item">
+                <span class="meta-lbl">STRUTTURA OSPITANTE</span>
+                <span class="meta-val">VETA WEB</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-lbl">PERIODO</span>
+                <span class="meta-val">17/11/25 - 08/05/26</span>
+              </div>
+            </div>
+            <div class="project-desc">
+              <p class="placeholder-text">Proseguendo il mio percorso di Formazione Scuola Lavoro (FSL), ho frequentato
+                il modulo Cisco "CCNA 2: Switching, Routing, and Wireless Essentials". Questo corso mi ha permesso di
+                superare i concetti di base per concentrarmi sulla configurazione e gestione di reti aziendali più
+                complesse e scalabili. Ho studiato e implementato tecnologie fondamentali come le VLAN, il routing
+                inter-VLAN (Router-on-a-Stick), lo Spanning Tree Protocol (STP) e l'EtherChannel, essenziali per
+                garantire prestazioni e affidabilità all'infrastruttura. Inoltre, ho esplorato la configurazione
+                dinamica degli indirizzi tramite DHCP e i concetti base per l'implementazione in sicurezza delle reti
+                wireless (WLAN). Questa esperienza prevalentemente pratica ha consolidato le mie competenze di
+                networking, rendendomi capace di amministrare e ottimizzare apparati di rete reali.</p>
+            </div>
+            <div class="gallery-wrapper">
+              <span class="gallery-label"><i class="fa-regular fa-images"></i> Galleria Fotografica (1 Foto)</span>
+              <div class="gallery-grid cols-1">
+                <img src="Photo/ccna2.jpg" alt="Cisco CCNA 2">
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD: Progetto: "Vivere la montagna: dalla bussola all'app" -->
+        <article class="project-card">
+          <div class="card-header">
+            <div class="window-controls">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+            <span class="card-meta-tag">FSL-5.03</span>
+          </div>
+          <div class="card-content">
+            <h3 class="project-title">Progetto: "Vivere la montagna: dalla bussola all'app"</h3>
+            <div class="project-meta">
+              <div class="meta-item">
+                <span class="meta-lbl">STRUTTURA OSPITANTE</span>
+                <span class="meta-val">Club Alpino italiano - Potenza</span>
+              </div>
+              <div class="meta-item">
+                <span class="meta-lbl">PERIODO</span>
+                <span class="meta-val">03/03/26 - 12/05/26</span>
+              </div>
+            </div>
+            <div class="project-desc">
+              <p class="placeholder-text">[Nel mio percorso di Formazione Scuola Lavoro (FSL), ho partecipato al
+                progetto multidisciplinare "Dalla bussola all'app", culminato con un'escursione dalla Piana del Lago di
+                Marsico Nuovo a Serra di Calvello. Questa esperienza ha unito la scoperta del territorio alle competenze
+                informatiche. Inizialmente, supportato dagli esperti del CAI, ho appreso le tecniche tradizionali di
+                orientamento utilizzando cartina e bussola. Successivamente, sotto la guida del prof. Lapenna, ho
+                partecipato alla progettazione e allo sviluppo di un'applicazione mobile dedicata al tracciamento e alla
+                navigazione di percorsi escursionistici. È stata un'attività che mi ha permesso di applicare le
+                conoscenze di programmazione in un contesto reale e di sviluppare, al di fuori delle aule scolastiche,
+                spirito di squadra, rispetto per l'ambiente e senso di responsabilità civica.</p>
+            </div>
+            <div class="gallery-wrapper">
+              <span class="gallery-label"><i class="fa-regular fa-images"></i> Galleria Fotografica (1 Foto)</span>
+              <div class="gallery-grid cols-1">
+                <img src="Photo/vivere_montagna.jpg" alt="Vivere la montagna">
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer section -->
+  <footer class="tech-footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <p>&copy; 2026 Paolo Riccardo Grasso. Tutti i diritti riservati.</p>
+        <p class="footer-sub">// PCTO & Formazione Scuola Lavoro Portfolio</p>
+      </div>
+      <div class="footer-right font-mono">
+        <span>SYS_STATUS: <span class="text-success">READY</span></span>
+        <span class="footer-divider">|</span>
+        <span>BUILD: v1.0.3</span>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
